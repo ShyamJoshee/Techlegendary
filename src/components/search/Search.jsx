@@ -11,7 +11,7 @@ const Search = ({setQuery}) => {
       <div className='search__box'>
             <input type="text"        
             placeholder='Search User...'
-            onChange={(e)=> setQuery(e.target.value)}/>
+            onChange={(e)=> setQuery(e.target.value.toLowerCase())}/>
             <button>
               Search
             </button>
