@@ -1,0 +1,114 @@
+.main .card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.main .card__container {
+  width: 300px;
+  padding: 1em;
+  border-radius: 15px;
+  margin: 10px;
+  background: #ddd;
+  text-align: center;
+  box-shadow: 0px 5px 20px -10px #111111;
+  position: relative;
+  transition: 0.4s;
+  background: linear-gradient(120deg, #1cb5e0 0%, #000851 100%);
+  box-shadow: 0px 5px 20px -10px #000851;
+}
+.main .card__container:hover {
+  z-index: 5;
+  box-shadow: 0px 13px 30px -15px #000000;
+  transform: translateY(-10px);
+}
+.main .card__container .avatar-img {
+  background-color: #072d3b;
+  text-align: center;
+}
+.main .card__container .content {
+  background-color: #aed8e9;
+  padding: 20px 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+@media (max-width: 1066px) {
+  .main .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .main .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.paginationBtn {
+  width: 80;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.paginationBtn a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #093f7e;
+  color: #093f7e;
+  cursor: pointer;
+}
+.paginationBtn a:hover {
+  color: white;
+  background-color: #093f7e;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #093f7e;
+}
+
+.search {
+  width: 100%;
+  background-color: #093f7e;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.search__box {
+  width: 80%;
+  justify-content: space-between;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+.search__box input {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+}
+@media (max-width: 650px) {
+  .search__box input {
+    font-size: 16px;
+  }
+}
+.search__box button {
+  color: white;
+  background-color: #072d3b;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 2px;
+  width: 150px;
+}
+@media (max-width: 650px) {
+  .search__box button {
+    font-size: 16px;
+    width: 100px;
+  }
+}/*# sourceMappingURL=main.css.map */
