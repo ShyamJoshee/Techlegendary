@@ -9,7 +9,7 @@ const Search = ({setQuery}) => {
   return (
     <div className='search'>
       <div className='search__box'>
-            <input type="text"        
+            <input autoCapitalize="none" type="text"        
             placeholder='Search User...'
             onChange={(e)=> setQuery(e.target.value.toLowerCase())}/>
             <button>
